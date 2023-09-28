@@ -1,0 +1,198 @@
+/* Seletores: */
+
+/* todos os elementos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #a09038;
+}
+
+/* Tags */
+/* tag {} */
+body {
+    /* background: url(/img/pexels-pixabay-270348.jpg) no-repeat center center fixed; */
+    background-color: black;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 10px 1px white;
+    margin-bottom: 50px;
+}
+
+header div img{
+    max-width: 100px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer img {
+    max-width: 100%;
+}
+
+/* #IDs */
+/* #id {} */
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    /* animation: piscarArrow 1s steps(5, start) infinite; */
+}
+
+#animation {
+    transition: 300ms;
+    animation: piscarArrow 1s steps(5, start) infinite;
+}
+
+/* .classes */
+/* .class {} */
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .cargo {
+    width: 80%;
+    margin: 0 auto;
+}
+.container .cargo h5 {
+    font-size: 20px;
+}
+
+.container .cargo h6 {
+    display: inline-flex;
+    width: 75%;
+    font-size: 15px;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.form div {
+    padding: 5px;
+}
+
+.form input {
+    width: 55%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 20%;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: 600;
+    background: linear-gradient(to right, deepskyblue 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #a09038;
+    border: none;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+.girarArrow {
+    transform: rotate(180deg);
+    transition: 300s;
+}
+
+.mostrarAbout {
+    display: block !important;
+}
+
+/* concatenar */
+
+/* keyframe */
+@keyframes piscarArrow {
+    to {
+        visibility: hidden;
+    }
+}
+
+/* responsividade */
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+
+    #about p {
+        max-width: 80%;
+    }
+
+    footer {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header div img{
+        max-width: 75px;
+    }
+
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .cargo h5 {
+        font-size: 10px;
+    }
+    
+    .container .cargo h6 {
+        font-size: 10px;
+    }
+}

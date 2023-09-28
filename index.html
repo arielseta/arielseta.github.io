@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" 
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" 
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ariel Seta - Portfólio</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/arroba.webp" alt="Gif programando">
+        </div>
+
+        <ul>
+            <li>
+                <a target="_blank" href="https://br.linkedin.com/in/arielseta/">Linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://github.com/arielseta/">GitHub</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:arielseta@hotmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/5514981153065">zapzap</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Ariel Seta</h1>
+                <div class="cargo">
+                    <h5>Analista de Sistemas</h5>
+                    <h6>
+                        Desenvolvedor Full Stack com conhecimentos em: Laravel, PHP, C++, Java, Delphi, Clipper 5.2, PostgreSQL, MySQL, MySQL Workbench e FireBird.
+                    </h6>
+                </div>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Formado em Engenharia de Computação, profissional com mais de 25 anos de experiência em diversos setores de TI, entre eles programação e desenvolvimento.
+                    Trabalhando atualmente com C++, Laravel, MySQL e Firebird 4, ferramentas Embarcadero® C++Builder 11.3 e Visual Studio.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="digite seu email">
+                    <button>enviar!</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <!-- <img src="/gif/java.webp" alt="Gif programando"> -->
+            <img src="gif/coding.gif" alt="Gif programando">
+        </div>
+    </footer>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('girarArrow')
+            var about = document.getElementById('about');
+            about.classList.toggle('mostrarAbout')
+        }
+    </script>
+
+</body>
+</html>
