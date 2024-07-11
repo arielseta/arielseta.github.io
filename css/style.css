@@ -85,6 +85,12 @@ footer img {
     animation: piscarArrow 1s steps(5, start) infinite;
 }
 
+#paragrafoabout p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* .classes */
 /* .class {} */
 .container {
@@ -99,6 +105,7 @@ footer img {
     width: 80%;
     margin: 0 auto;
 }
+
 .container .cargo h5 {
     font-size: 20px;
 }
@@ -107,6 +114,27 @@ footer img {
     display: inline-flex;
     width: 75%;
     font-size: 15px;
+}
+
+.container .publicacoes {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .publicacoes ul {
+    list-style: inside;
+}
+
+.container .publicacoes h4 {
+    font-size: medium;
+}
+
+.container .publicacoes li {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
 }
 
 .form {
